@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cbc-text: #FFFFFF;
+}
+
+/* Cabeçalho */
+
+header {
+    
+}
+
+.cabecalho nav {
+    background-color: #2C2C2C;
+    border-radius: 10px;
+}
+
+
+.cabecalho .nav-link, .cabecalho #titulo-cbc{
+    color: var(--cbc-text);
+}
+
+.cabecalho li {
+    width: 80px;
+    text-align: center;
+    margin-right: 20px;
+    padding: 0;
+}
+
+.cabecalho li:hover {
+    background: #7F7F7F;
+    transition: 1s;
+    border-radius: 5px;
+}
+
+.cabecalho a:hover {
+    color: #FFFFFF;
+}
+
