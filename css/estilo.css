@@ -5,38 +5,41 @@
 
 :root {
     --cbc-text: #FFFFFF;
+    --cbc-text-rgba: 255, 255, 255;
 }
 
 /* Cabeçalho */
 
-header {
-    
-}
 
 .cabecalho nav {
     background-color: #2C2C2C;
     border-radius: 10px;
+    padding: 3;
 }
-
 
 .cabecalho .nav-link, .cabecalho #titulo-cbc{
     color: var(--cbc-text);
+}
+
+.cabecalho #navbarNav {
+    height: 100%;
 }
 
 .cabecalho li {
     width: 80px;
     text-align: center;
     margin-right: 20px;
-    padding: 0;
 }
 
 .cabecalho li:hover {
     background: #7F7F7F;
     transition: 1s;
     border-radius: 5px;
+    border: 1px solid rgb(var(--cbc-text-rgba), 0.2);
+    height: 40px;
 }
 
 .cabecalho a:hover {
-    color: #FFFFFF;
+    color: var(--cbc-text);
 }
 
