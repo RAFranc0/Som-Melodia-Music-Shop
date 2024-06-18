@@ -1,45 +1,85 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 
 :root {
-    --cbc-text: #FFFFFF;
-    --cbc-text-rgba: 255, 255, 255;
+    --colors-white: #FFFFFF;
+    --colors-white-rgba: 255, 255, 255;
+    --colors-gray: #231B26;
+    --colors-light-gray: #2b2b2b;
+    --colors-dark-gray: #0f0d0f;
 }
 
 /* Cabeçalho */
 
-
-.cabecalho nav {
-    background-color: #2C2C2C;
-    border-radius: 10px;
-    padding: 3;
+.cabecalho {
+    padding: 0;
+    margin: 0;
 }
 
-.cabecalho .nav-link, .cabecalho #titulo-cbc{
-    color: var(--cbc-text);
+.cabecalho #cabecalho-nav {
+    background-color: var(--colors-gray);
+    color: var(--colors-white);
+    padding: 0;
+    margin: 0;
 }
 
-.cabecalho #navbarNav {
-    height: 100%;
+.cabecalho #cabecalho-nav div {
+    margin: 0;
+    padding: 0;
 }
 
-.cabecalho li {
-    width: 80px;
-    text-align: center;
-    margin-right: 20px;
+.cabecalho #cabecalho-nav a {
+    color: var(--colors-white);
 }
 
-.cabecalho li:hover {
-    background: #7F7F7F;
-    transition: 1s;
-    border-radius: 5px;
-    border: 1px solid rgb(var(--cbc-text-rgba), 0.2);
-    height: 40px;
+.cabecalho #cabecalho-nav img {
+    height: 70px;
 }
 
-.cabecalho a:hover {
-    color: var(--cbc-text);
+.cabecalho #cabecalho-navbar-menu-btn img {
+    width: 45px;
+    height: 45px;
+    transition: 0.2s;
 }
 
+.cabecalho #cabecalho-navbar-menu-btn img:hover {
+    width: 50px;
+    height: 50px;
+}
+
+/* Menu Lateral - Offcanva */
+
+.cabecalho #offcanvas {
+    color: var(--colors-white);
+    background-color: var(--colors-dark-gray);
+    transition: cubic-bezier(0.45, 0.45, 0.75, 0.75) 0.35s;
+}
+
+.cabecalho #offcanvas #offcanvas-header {
+    background-color: var(--colors-white);
+    height: 80px;
+}
+
+.cabecalho #offcanvas #offcanvas-header-btn-close {
+    width: 50px;
+    height: 50px;
+}
+
+.cabecalho #offcanvas .offcanvas-body-menu-btn {
+    width: 100%;
+    height: 50px;
+    color: var(--colors-white);
+    font-size: 1.2em;
+    text-shadow: 1px 1px 5px rgba(255,255,255,0.25);
+    border-radius: 0px;
+}
+
+.cabecalho #offcanvas .offcanvas-body-menu-btn:hover {
+    background-color: var(--colors-light-gray);
+    transition: 0.5s;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}

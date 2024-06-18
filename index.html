@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +23,7 @@
     <!--Abre o cabeçalho e o rodapé através do Shared/header.html e Shared/footer.html
         Para que estes sejam padrões para todas as páginas-->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             fetch('Shared/header.html')
                 .then(response => response.text())
                 .then(data => {
@@ -30,7 +31,7 @@
                 });
         });
 
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             fetch('Shared/footer.html')
                 .then(response => response.text())
                 .then(data => {
@@ -39,9 +40,14 @@
         });
     </script>
 
+    <script src="/js/scripts.js"></script>
+
     <!--Scripts bootstrap-->
     <script src="/bootstrap/js/bootstrap.bundle.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
     <script src="/bootstrap/js/bootstrap.min.js"></script>
 </body>
+
 </html>
