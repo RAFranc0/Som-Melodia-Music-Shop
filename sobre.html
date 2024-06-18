@@ -1,18 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Som & Melodia</title>
     <!--Estilos e Bootstrap-->
     <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/estilo.css">
 </head>
+
 <body>
+    <div id="header"></div>
+
+    <div class="container text-center">
+        <h1>Sobre</h1>
+    </div>
+
+    <div id="footer"></div>
+
+    <!--Abre o cabeçalho e o rodapé através do Shared/header.html e Shared/footer.html
+        Para que estes sejam padrões para todas as páginas-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('Shared/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('Shared/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                });
+        });
+    </script>
+
+    <script src="/js/scripts.js"></script>
 
     <!--Scripts bootstrap-->
     <script src="/bootstrap/js/bootstrap.bundle.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
     <script src="/bootstrap/js/bootstrap.min.js"></script>
 </body>
+
 </html>

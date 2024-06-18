@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', async function() {
             window.location.href = '../aulas.html';
         });
     } else {
-        console.error('Elemento com ID "inicio" não encontrado no cabeçalho.');
+        console.error('Elemento com ID "aulas" não encontrado no cabeçalho.');
     }
 
     //Redirecionamento do botão Loja Virtual no menu do cabeçalho header.html
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', async function() {
             window.location.href = '../loja.html';
         });
     } else {
-        console.error('Elemento com ID "inicio" não encontrado no cabeçalho.');
+        console.error('Elemento com ID "loja" não encontrado no cabeçalho.');
     }
 
     //Redirecionamento do botão Sobre no menu do cabeçalho header.html
@@ -43,16 +43,16 @@ document.addEventListener('DOMContentLoaded', async function() {
             window.location.href = '../sobre.html';
         });
     } else {
-        console.error('Elemento com ID "inicio" não encontrado no cabeçalho.');
+        console.error('Elemento com ID "sobre" não encontrado no cabeçalho.');
     }
 
     //Redirecionamento do botão Contato no menu do cabeçalho header.html
     var contato = document.getElementById('contato');
     if (contato) {
         contato.addEventListener('click', function () {
-            window.location.href = '../loja.html';
+            window.location.href = '../contato.html';
         });
     } else {
-        console.error('Elemento com ID "inicio" não encontrado no cabeçalho.');
+        console.error('Elemento com ID "contato" não encontrado no cabeçalho.');
     }
 });
