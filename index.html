@@ -11,13 +11,108 @@
 </head>
 
 <body>
+    <!-- Carregamento dinâmico do cabeçalho através Shared/header.html -->
     <div id="header"></div>
 
-    <div class="container text-center">
-        <h1>Welcome to the Home Page</h1>
-        <p>This is the main content of the home page.</p>
-    </div>
 
+    <div class="corpo">
+        <div class="container text-center" >
+            <h1>Bem vindo ao Som & Melodia</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam iure libero nostrum eveniet, consequatur omnis corrupti sapiente ullam. Alias, explicabo facere repellat omnis assumenda tempore odio dolore placeat iste animi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit asperiores iste beatae ex vitae, incidunt assumenda alias, est sint labore corrupti, numquam consectetur earum nostrum debitis culpa atque? In, pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sapiente quas neque, fugit pariatur rem, sed delectus quibusdam quaerat dolor quia, accusantium eaque impedit? Ducimus debitis illo odit repellat quo.</p>
+            <h5 class="my-4">Conheça nossos projetos:</h5>
+
+            <div class="row" id="carousel-container">
+                <!-- Carrossel Direito -->
+                <div class="col-4 text-center d-flex flex-column" id="carousel-box">
+                    <div id="carousel-direito" class="carousel slide w-75 mx-auto" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://picsum.photos/100" class="d-block w-100" alt="1" id="carousel-item-img">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://picsum.photos/150" class="d-block w-100" alt="2" id="carousel-item-img">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://picsum.photos/200" class="d-block w-100" alt="3" id="carousel-item-img">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-direito" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-direito" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                      <div id="carousel-legenda">
+                        <h6>Legenda</h6>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere qui reprehenderit alias nostrum dolorum hic nemo autem eaque blanditiis, temporibus.</p>
+                      </div>
+                </div>
+
+                <!-- Carrossel Central -->                
+                <div class="col-4 text-center d-flex flex-column" id="carousel-box">
+                    <div id="carousel-central" class="carousel slide w-75 mx-auto" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://picsum.photos/300" class="d-block w-100" alt="1" id="carousel-item-img">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://picsum.photos/275" class="d-block w-100" alt="2" id="carousel-item-img">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://picsum.photos/250" class="d-block w-100" alt="3" id="carousel-item-img">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-central" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-central" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                      <div id="carousel-legenda">
+                        <h6>Legenda</h6>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere qui reprehenderit alias nostrum dolorum hic nemo autem eaque blanditiis, temporibus.</p>
+                      </div>
+                </div>
+
+                <!-- Carrossel Esquerdo -->
+                <div class="col-4 text-center d-flex flex-column" id="carousel-box">
+                    <div id="carousel-esquerdo" class="carousel slide w-75 mx-auto" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://picsum.photos/120" class="d-block w-100" alt="1" id="carousel-item-img">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://picsum.photos/140" class="d-block w-100" alt="2" id="carousel-item-img">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://picsum.photos/160" class="d-block w-100" alt="3" id="carousel-item-img">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-esquerdo" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-esquerdo" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                      <div id="carousel-legenda">
+                        <h6>Legenda</h6>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere qui reprehenderit alias nostrum dolorum hic nemo autem eaque blanditiis, temporibus.</p>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Carregamento dinâmico do rodapé através do Shared/footer.html-->
     <div id="footer"></div>
 
     <!--Abre o cabeçalho e o rodapé através do Shared/header.html e Shared/footer.html
